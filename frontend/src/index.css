@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.color-empty {
+  fill: #ebedf0;
+}
+
+.color-present {
+  fill: #22c55e;
+}
+
+.color-absent {
+  fill: #ef4444;
+}
+
+.color-empty {
+  fill: #ebedf0;
+}
+
+.color-scale-2 {
+  fill: #9be9a8;
+}
+
+.color-scale-3 {
+  fill: #40c463;
+}
+
+.color-scale-4 {
+  fill: #216e39;
+}
+
+.react-calendar-heatmap text {
+  font-size: 8px;
+}
+
+.react-calendar-heatmap rect {
+  width: 10px;
+  height: 10px;
+}
