@@ -1,7 +1,6 @@
 # HRMS Lite – Human Resource Management System
 
 A lightweight full-stack HRMS application that enables administrators to manage employees and track daily attendance.
-
 This project was developed as a full-stack coding assignment to demonstrate backend API design, frontend development, and database persistence.
 
 ---
@@ -80,9 +79,7 @@ hrms
 │ └── package.json
 │
 └── README.md
-
-
----
+```
 
 ## Running the Project Locally
 
@@ -90,40 +87,31 @@ hrms
 ```bash
 git clone https://github.com/mrityunjay835/hrms-lite.git
 cd hrms-lite
+```
 ---
 
 ### 2. Backend Setup
 
-
+```bash
 cd backend
-
 python3 -m venv venv
 source venv/bin/activate
-
 pip install -r requirements.txt
-
-
+```
 Create `.env`:
-
-
+```bash
 DATABASE_URL=postgresql://username:password@localhost:5432/hrms_db
-
-
+```
 Run backend:
-
-
+```bash
 uvicorn app.main:app --reload
-
+```
 
 Backend runs at:
-
-
 http://localhost:8000
 
 
 Swagger docs:
-
-
 http://localhost:8000/docs
 
 
@@ -131,15 +119,13 @@ http://localhost:8000/docs
 
 ### 3. Frontend Setup
 
-
+```bash
 cd frontend
-
 npm install
 npm run dev
-
+```
 
 Frontend runs at:
-
 
 http://localhost:5173
 
@@ -149,26 +135,26 @@ http://localhost:5173
 ## API Endpoints
 
 ### Employee
-
+```bash
 POST /employees
 GET /employees
 GET /employees/{id}
 PUT /employees/{id}
 DELETE /employees/{id}
-
+```
 
 ### Attendance
-
+```bash
 POST /attendance
 GET /attendance/{employee_id}
 GET /attendance/summary/{employee_id}
-
+```
 
 ### Dashboard
-
+```bash
 GET /dashboard
 GET /dashboard/attendance-heatmap
-
+```
 
 ---
 
